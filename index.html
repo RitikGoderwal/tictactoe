@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TIC TAC TOE</title> 
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <script src="tc.js" defer></script>
+    </head>
+    <body>
+        <div id="grid_container">
+            <div class="box"><span class="boxText">0</span></div>
+            <div class="box"><span class="boxText">1</span></div>
+            <div class="box"><span class="boxText">2</span></div>
+            <div class="box"><span class="boxText">3</span></div>
+            <div class="box"><span class="boxText">4</span></div>
+            <div class="box"><span class="boxText">5</span></div>
+            <div class="box"><span class="boxText">6</span></div>
+            <div class="box"><span class="boxText">7</span></div>
+            <div class="box"><span class="boxText">8</span></div>
+        </div>
+        <div id="button">    
+            <button id="start_button" type="button" onclick="timer()">START</button>
+            <div id="time">00 : 00</div>
+            <div id="other_button">
+                <button id="stop_button" type="button" onclick="stopTimer()">STOP</button>
+                <button id="reset_button" type="button" onclick="resetTimer()">RESET</button>
+            </div>
+        </div>
+
+        <div id="info">
+            <h1>Welcome to Tic Tac Toe</h1>
+            <div>
+                <span>its the turn of <span class="player">X</span></span>
+            </div>
+            <div id="result">running</div>
+            <div class="imgBox">
+                <img src="" alt="win img">
+            </div>
+            <button class="reset">RESET GAME</button>
+        </div>
+    </body>
+</html>
